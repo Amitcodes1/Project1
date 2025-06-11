@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        #nav-site{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 50px;
+            margin-left: -5px;
+            margin-top: -8px;
+            background-color:rgb(219, 216, 211);
+            position: relative;
+            z-index: 1;
+        }
+        logo{
+            position: fixed;
+            left: 50px;
+            background-color: white;
+        }
+        img.sites{
+            width: 35px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 6px;
+            border-radius: 10px;
+        }
+        img.sites:hover{
+            cursor: pointer;
+            width: 37px;
+            height: 37px;
+            border: 1px solid black;
+        }
+         
+        header{
+            position: absolute;
+            top: 0px;
+            left: 90px;
+            font-size: 15px;
+            color: gray;
+        }
+        header1{
+            position: absolute;
+            top: 170px;
+            left: 90px;
+            font-size: 15px;
+            color: gray;
+        }
+        header2{
+            position: absolute;
+            top: 410px;
+            left: 90px;
+            font-size: 15px;
+            color: gray;
+        }
+        header3{
+            position: absolute;
+            top: 950px;
+            left: 90px;
+            font-size: 15px;
+            color: gray;
+        }
+        #c1{
+            position: absolute;
+            top: 26px;
+            left: 55px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        li{
+            list-style: none;
+        }
+        li{
+            margin-top: 10px;
+            color: rgb(43, 42, 42);
+            cursor: pointer;
+        }
+        li:hover{
+            color: black;
+            font-size: 16px;
+        }
+        #c2{
+            position: absolute;
+            top: 190px;
+            left: 55px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        #c3{
+            position: absolute;
+            top: 430px;
+            left: 55px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        #c4{
+            position: absolute;
+            top: 972px;
+            left: 90px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        #com1{
+            position: absolute  ;
+            top: 65px;
+            left: -12px;
+            height:650px;
+            width: 265px;
+            overflow-y: scroll;
+        }
+        #select{
+            position: absolute;
+            top: 20px;
+            margin-left: 300px;
+            z-index: 1;
+            border: none;
+            font-size: 15px;
+            color: gray;
+            cursor: pointer; 
+        }
+        #select1{
+            position: absolute;
+            top: 20px;
+            margin-left: 420px;
+            z-index: 1;
+            border: none;
+            font-size:15px;
+            color: gray;
+            cursor: pointer; 
+        }
+        #select2{
+            position: absolute;
+            top: 20px;
+            margin-left: 600px;
+            z-index: 1;
+            border: none;
+            font-size:15px;
+            color: gray;
+            cursor: pointer; 
+        }
+        #select3{
+            position: absolute;
+            top: 20px;
+            margin-left: 720px;
+            z-index: 1;
+            border: none;
+            font-size:15px;
+            color: gray;
+            cursor: pointer; 
+        }
+        #select4{
+            position: absolute;
+            top: 20px;
+            margin-left: 820px;
+            z-index: 1;
+            border: none;
+            font-size:15px;
+            color: gray;
+            cursor: pointer; 
+        }
+        #price{
+            position: absolute;
+            top: 3px;
+            margin-left: 910px;
+            z-index: 1;
+            font-size:17px;
+            color: gray;
+            cursor: pointer;   
+        }
+        #btn1{
+            position: absolute;
+            top: 12px;
+            margin-left: 1267px;
+        }
+        #button1{
+            width: 65px;
+            height:35px;
+        }
+        #head{
+            position: absolute;
+            top: 104px;
+            margin-left: 300px;
+            font-size: 30px;
+            width: 700px;
+            height:350px;
+        }
+        #box1{
+            border: 1px solid rgb(219, 217, 217);
+            padding: 15px;
+            position: absolute;
+            top: 100px;
+            margin-left: 950px;
+            height: 220px;
+            width: 330px;
+            margin-top: 0;
+            border-radius: 10px;
+        }
+        .p1{
+            margin-top: 20px;
+        }
+        #para1{
+            position: absolute;
+            top: 203px;
+            margin-left: 300px;
+            font-size: 20px;
+            width: 600px;
+            height:350px;
+            color: gray;
+        }
+        #s1{
+            position: absolute;
+            top: 450px;
+            margin-left: 320px;
+            font-size: 20px;
+            border: 1px solid black ;
+            border-radius: 10px;
+        }
+        #ss1{
+            height: 30px;
+            width: 180px;
+            border: none;
+        }
+        #d1{
+            position: absolute;
+            top: 450px;
+            left: 560px;
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #Devices{
+            font-size: 20px;
+            border: none;
+            height: 30px;
+            width: 180px;
+        } 
+        #co1{
+            position: absolute;
+            top: 450px;
+            left: 860px;
+            font-size: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        #color{
+            font-size: 20px;
+            border: none;
+            height: 30px;
+            width: 160px;
+        }
+        *{
+            font-family:sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <logo>
+            <img src="https://www.informaticatecnopc.com/wp-content/uploads/2023/12/Landingfolio_logo.png" alt=""/>
+        </logo>
+    </div>
+    <images id="nav-site">
+        <img class="sites" src="https://webcurate.co/assets/images/tool-favicons/B6YEGvD.webp"/>
+        <a href="https://www.flowponent.com/"><img class="sites" src="https://th.bing.com/th/id/OIP.oEVHEwZE57eKzW8TXoz3nwHaHa?rs=1&pid=ImgDetMain"/></a>
+        <a href="https://www.figcomponents.com/"><img class="sites" src="https://1000logos.net/wp-content/uploads/2024/09/Figma-Emblem-2048x1152.png"/></a>            
+        <a href="https://www.tailbits.com/"><img class="sites" src="https://th.bing.com/th/id/OIP.4j7LvA999TgVzlsDg_Uu7AHaEx?rs=1&pid=ImgDetMain"/></a>
+        <a href="https://www.headshotpro.com/"><img class="sites" src="https://th.bing.com/th/id/OIP.niWC57RvjIK27JTG1GGXhwAAAA?o=7rm=3&rs=1&pid=ImgDetMain"/></a>
+        <a href="https://www.profilepicture.ai/"><img class="sites" src="https://aitoolsjournal.net/wp-content/uploads/2023/09/profilepicture.ai-logo.png"/></a>
+        <a href="https://www.stockphotoai.com/"><img class="sites" src="file:///C:/Users/amitr/Downloads/8sz8edbt.png"/></a>
+    </images>
+    <div id="com1">
+        <header>
+            <h4>Component Library</h4>
+        </header>
+        <componets id="c1">
+            <ol id="list1">
+                <li class="li1">Allcomponets</li>
+                <li class="li1">Tailwind</li>
+                <li class="li1">webflow</li>
+                <li class="li1">Figma</li>
+            </ol>
+        </componets>
+        <header1>
+            <h4>Pages</h4>
+        </header1>
+        <componets id="c2">
+            <ol id="list2">
+                <li class="li2">Landing page</li>
+                <li class="li2">Pricing Page</li>
+                <li class="li2">About Page</li>
+                <li class="li2">Login Page</li>
+                <li class="li2">Signup Page</li>
+                <li class="li2">Not Found Page</li>
+            </ol>
+        </componets>
+        <header2>
+            <h4>Industries</h4>
+        </header2>
+        <componets id="c3">
+            <ol id="list3">
+                <li class="li3">SaaS        (340)</li>
+                <li class="li3">Product     (209)</li>
+                <li class="li3">Business    (140)</li>
+                <li class="li3">Marketing   (116)</li>
+                <li class="li3">Design Tools (113)</li>
+                <li class="li3">Software     (85)</li>
+                <li class="li3">Technology    (78)</li>
+                <li class="li3">Mobile App    (71)</li>
+                <li class="li3">Freelance     (35)</li>
+                <li class="li3">Artificial Intelligence   (34)</li>
+                <li class="li3">Users         (31)</li>
+                <li class="li3">Crypto        (21)</li>
+                <li class="li3">Corporate     (20)</li>
+                <li class="li3">CRM           (19)</li>
+                <li class="li3">Course         (18)</li>
+            </ol>
+        </componets>  
+        <header3>
+            <h4>Colors</h4>
+        </header3> 
+        <comonets id="c4">
+            <li class="li4">Red</li>
+            <li class="li4">Orange</li>
+            <li class="li4">Brown</li>
+            <li class="li4">Yellow</li>
+            <li class="li4">Green</li>
+            <li class="li4">Blue</li>
+            <li class="li4">Gray</li>
+            <li class="li4">Black</li>
+            <li class="li4">White</li>
+        </comonets>
+    </div>
+    <select id="select" required>
+        <option selected disabled>Inspiration</option>
+        <option></option>
+        <option></option>      
+    </select>
+    <select id="select1" required>
+        <option selected disabled>Component Library</option>
+        <option></option>
+    </select>
+    <select id="select2" required>
+        <option selected disabled>Templates</option>
+        <option></option>
+        <option></option>      
+    </select>
+    <select id="select3" required>
+        <option selected disabled>Learn</option>
+        <option></option>
+        <option></option>
+        <option></option>      
+    </select>
+    <select id="select4" required>
+        <option selected disabled>Tools</option>
+        <option></option>
+        <option></option>      
+    </select>
+    <price id="price">
+        <p>prices</p>
+    </price>
+    <btn id="btn1">
+                <button id="button1" style="color: rgb(68, 67, 67); background-color: white; font-size: 15px; border-radius: 10%; border-color: rgb(224, 224, 224);">Log in</button>
+    </btn>
+    <head>
+        <p id="head">
+            The Best Landing Page Design Inspiration, Templates and More.
+        </p>
+    </head>
+    <boxy id="box1">
+        <p class="p1" style="font-size: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Say goodbye to building Tailwind & Webflow sites from scratch</p>
+        <p class="p1">With access to over 805 components you can build beautiful websites and save thousands of hours using the world's largest Webflow component library.</p>
+        <button class="p1" style=" background-color: rgb(10, 10, 10); color: white;  font-size: 20px;  border-radius: 10%;">Try out now</button>
+    </boxy>
+    <para id="para1">
+        <p>Looking for landing page inspiration? We've got you covered. Landingfolio features the best landing page designs, templates, component and more on the web. Get inspired by real landing page examples curated by us to ensure the highest quality.</p>
+    </para>
+    <div id="s1">
+        <label for="search"><img src="file:///C:/Users/amitr/Downloads/search.svg"></label>
+        <search1 id="s2">
+            <input type="search" placeholder=" Search here" required id="ss1" style="font-size: 20px;">
+        </search1>
+    </div>
+    <div id="d1">
+        <label for="Devices">Devices:</label>
+        <select id="Devices">
+            <option value="Desktop">Desktop </option>
+            <option value="Mobile">Mobile</option>
+        </select>
+    </div>
+    <div id="co1">
+        <label for="color">Colors</label>
+        <input type="color"  id="color" >
+    </div>
+</div>
+</body>
+</html>
